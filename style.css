@@ -18,6 +18,53 @@
     padding: 0;
 }
 
+
+/* custom styles */
+
+
+/* google form */
+
+.iframe {
+    width: 500px;
+    height: 1310px;
+}
+
+
+/* image overlays */
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.747);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.single-editors-pick-area:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text a {
+    color: white;
+}
+
 #preloader {
     overflow: hidden;
     background-color: #132faafc;
@@ -453,7 +500,7 @@ li {
 }
 
 .sticky .header_area {
-    background-color: rgba(2, 15, 51, 0.9);
+    background-color: rgba(8, 42, 134, 0.9);
     height: 80px;
     z-index: 9999;
     border-bottom: 1px solid transparent;
@@ -519,7 +566,7 @@ li {
 
 .dorne-welcome-area {
     width: 100%;
-    height: 945px;
+    height: 910px;
     position: relative;
     z-index: 1;
 }
@@ -552,7 +599,7 @@ li {
     font-size: 12px;
     font-weight: 700;
     color: #fff;
-    background-color: rgba(144, 103, 238, 0.65);
+    background-color: rgba(103, 123, 238, 0.65);
     text-transform: uppercase;
     min-width: 100px;
     height: 44px;
@@ -563,7 +610,7 @@ li {
 
 .hero-search-form .nav-tabs .nav-link.active {
     color: #fff;
-    background-color: #376cff91;
+    background-color: rgba(56, 109, 254, 0.569);
     border-color: transparent;
 }
 
@@ -641,6 +688,8 @@ li {
 .dorne-catagory-area {
     position: relative;
     z-index: 9;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .single-catagory-area {
@@ -657,7 +706,7 @@ li {
 
 .all-catagories {
     position: relative;
-    top: -50%;
+    top: -30%;
     z-index: 15;
 }
 
@@ -666,7 +715,11 @@ li {
 }
 
 .single-catagory-area .catagory-content h6 {
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.single-catagory-area .catagory-content p {
     color: #fff;
 }
 
@@ -678,6 +731,11 @@ li {
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 60px;
+}
+
+.about-content button {
+    margin-top: 15px;
+    padding: 10px;
 }
 
 .about-content span {
