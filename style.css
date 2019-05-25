@@ -691,6 +691,11 @@ li {
     margin-bottom: 60px;
 }
 
+.about-content button {
+    margin-top: 15px;
+    padding: 10px;
+}
+
 .about-content span {
     color: #4386ea;
 }
