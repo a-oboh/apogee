@@ -20,8 +20,124 @@
 
     <!-- Responsive CSS -->
     <link href="css/responsive/responsive.css" rel="stylesheet">
+	
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 </head>
+
+<style type="text/css">
+body {
+	font-family: "Open Sans", sans-serif;
+}
+h2 {
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	position: relative;
+	margin: 25px 0 50px;
+}
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #ffdc12;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+}
+.carousel {
+	width: 650px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+.carousel .item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 340px;
+}
+.carousel .item a {
+	color: #eb7245;
+}
+.carousel .img-box {
+	width: 145px;
+	height: 145px;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {	
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	text-align: center;
+	padding-bottom: 5px;
+}
+.carousel .overview b {
+	color: #333;
+	font-size: 15px;
+	text-transform: uppercase;
+	display: block;	
+	padding-bottom: 5px;
+}
+.carousel .star-rating i {
+	font-size: 18px;
+	color: #ffdc12;
+}
+.carousel .carousel-control {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+    background: #999;
+    text-shadow: none;
+	top: 4px;
+}
+.carousel-control i {
+	font-size: 20px;
+	margin-right: 2px;
+}
+.carousel-control.left {
+	left: auto;
+	right: 40px;
+}
+.carousel-control.right i {
+	margin-right: -2px;
+}
+.carousel .carousel-indicators {
+	bottom: 15px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 11px;
+	height: 11px;
+	margin: 1px 5px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #e2e2e2;
+	border-color: transparent;
+}
+.carousel-indicators li.active {
+	border: none;
+	background: #888;		
+}
+</style>
 
 <body>
     <!-- Preloader -->
@@ -61,14 +177,14 @@
                                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Listings<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Listing<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                        <a class="dropdown-item" href="listing.html">Listing</a>
-                                        <a class="dropdown-item" href="single-listing.html">Single Listing</a>
+                                        <a class="dropdown-item" href="listing.html">Hotels</a>
+                                        <a class="dropdown-item" href="single-listing.html">Flight</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
+                                    <a class="nav-link" href="contact.html">contact</a>
                                 </li>
                             </ul>
                             <!-- Search btn -->
@@ -222,12 +338,12 @@
                     <div class="single-editors-pick-area wow fadeInUp" data-wow-delay="0.2s">
                         <img src="img/zanzibar.jpg" alt="" height="120px">
                         <div class="overlay">
-                            <div class="text"><a href="contact.html">Order Now ></a></div>
+                            <div class="text"><a href="hotelsinlagos.html">Order Now ></a></div>
                         </div>
                         <div class="editors-pick-info">
 
                             <div class="places-total-destinations d-flex">
-                                <a href="#">Zanzibar</a>
+                                <a href="#">Lagos</a>
                                 <a href="#">Now Available</a>
                             </div>
                         </div>
@@ -235,7 +351,7 @@
                     <div class="single-editors-pick-area wow fadeInUp" data-wow-delay="0.4s">
                         <img src="img/istanbul.jpg" alt="">
                         <div class="overlay">
-                            <div class="text"><a href="contact.html">Order Now ></a></div>
+                            <div class="text"><a href="hotelsinlagos.html">Order Now ></a></div>
                         </div>
                         <div class="editors-pick-info">
                             <div class="places-total-destinations d-flex">
@@ -248,7 +364,7 @@
                     <div class="single-editors-pick-area wow fadeInUp" data-wow-delay="0.6s">
                         <img src="img/germany.jpg" alt="">
                         <div class="overlay">
-                            <div class="text"><a href="contact.html">Order Now ></a></div>
+                            <div class="text"><a href="hotelsinlagos.html">Order Now ></a></div>
                         </div>
                         <div class="editors-pick-info">
                             <div class="places-total-destinations d-flex">
@@ -262,7 +378,7 @@
                     <div class="single-editors-pick-area wow fadeInUp" data-wow-delay="0.6s">
                         <img src="img/bg-img/editor-3.jpg" alt="">
                         <div class="overlay">
-                            <div class="text"><a href="contact.html">Order Now ></a></div>
+                            <div class="text"><a href="hotelsinlagos.html">Order Now ></a></div>
                         </div>
                         <div class="editors-pick-info">
                             <div class="places-total-destinations d-flex">
@@ -305,6 +421,7 @@
                                 <div class="feature-title">
                                     <h5>Dubai</h5>
                                     <p>4-star hotel, Free Return ticket (economy class)</p>
+									<button type="button" class="btn btn-default">Book now</button>
                                 </div>
                             </div>
                         </div>
@@ -319,6 +436,7 @@
                                 <div class="feature-title">
                                     <h5>New York</h5>
                                     <p>4-star hotel, Free Return ticket (economy class)</p>
+									<button type="button" class="btn btn-default">Book now</button>
                                 </div>
                             </div>
                         </div>
@@ -333,6 +451,7 @@
                                 <div class="feature-title">
                                     <h5>Paris</h5>
                                     <p>4-star hotel, Free Return ticket (economy class)</p>
+									<button type="button" class="btn btn-default">Book now</button>
                                 </div>
                             </div>
                         </div>
@@ -347,6 +466,7 @@
                                 <div class="feature-title">
                                     <h5>Zanzibar</h5>
                                     <p>4-star hotel, Free Return ticket (economy class)</p>
+									<button type="button" class="btn btn-default">Book now</button>
                                 </div>
                             </div>
                         </div>
@@ -361,6 +481,7 @@
                                 <div class="feature-title">
                                     <h5>Istanbul</h5>
                                     <p>4-star hotel, Free Return ticket (economy class)</p>
+									<button type="button" class="btn btn-default">Book now</button>
                                 </div>
 
                             </div>
@@ -521,21 +642,95 @@
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <div class="clients-logo d-md-flex align-items-center justify-content-around">
-                        <img src="img/emirates.png" alt="" height="40px" width="110px">
-                        <img src="img/turkish.jpg" alt="" height="40px" width="110px">
-                        <img src="img/etihad.png" alt="" height="40px" width="110px">
-                        <img src="img/delta.png" alt="" height="40px" width="110px">
-                        <img src="img/qatar.png" alt="" height="40px" width="110px">
-                    </div>
-                </div>
+			
+			<div class="wrapperMain">
+<section id="services" class="bounce-inInverse">
+        <div class="containerContent">
+        <div class="set_size_section1">
+            <h2 class="services_h2 center">SERVICES</h2>
+            <div class="article_center2">
+                <article class="section1_article">
+                    <img alt="Basket" src="https://img.icons8.com/ios/50/000000/airplane-take-off.png" width="78" height="77"> <!--http://icons.iconarchive.com/icons/jozef89/services-flat/512/ecommerce-icon.png-->
+                    <h3>corporate travel solution</h3>
+                    <p>content</p>
+                    </article>
+                <article class="section1_article">
+                    <img alt="Laptop" src="https://img.icons8.com/ios/50/000000/conference-call-filled.png" width="78" height="77">
+                    <h3>meeting and incentives</h3>
+                    <p>content</p>
+                </article>
+                <article class="section1_article">
+                    <img alt="Locked" src="https://img.icons8.com/ios/50/000000/consultation-filled.png" width="78" height="77">
+                    <h3>vacation consultation</h3>
+                    <p>content</p>
+                </article>
             </div>
         </div>
-    </div>
-    <!-- ***** Clients Area End ***** -->
+        </div>
+    </section>
+	</div>
+	
+	   <h2>Testimonials</h2>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<!-- Carousel indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>   
+	<!-- Wrapper for carousel items -->
+	<div class="carousel-inner">		
+		<div class="item carousel-item active">
+			<div class="img-box"><img src="img/core-img/logo.png" alt=""></div>
+			<p class="testimonial">Nice website</p>
+			<p class="overview"><b>Michael Holz</b>Seo Analyst at <a href="#">lagosbuild</a></p>
+			<div class="star-rating">
+				<ul class="list-inline">
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+				</ul>
+			</div>
+		</div>
+		<div class="item carousel-item">
+			<div class="img-box"><img src="img/core-img/logo.png" alt=""></div>
+			<p class="testimonial">Nice website</p>
+			<p class="overview"><b>Paula Wilson</b>Media Analyst at <a href="#">lagosbuild</a></p>
+			<div class="star-rating">
+				<ul class="list-inline">
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+				</ul>
+			</div>
+		</div>
+		<div class="item carousel-item">
+			<div class="img-box"><img src="img/core-img/logo.png" alt=""></div>
+			<p class="testimonial">Nice website</p>
+			<p class="overview"><b>Antonio Moreno</b>Web Developer at <a href="#">lagosbuild</a></p>
+			<div class="star-rating">
+				<ul class="list-inline">
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star"></i></li>
+					<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+				</ul>
+			</div>
+		</div>		
+	</div>
+	<!-- Carousel controls -->
+	<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+		<i class="fa fa-angle-left"></i>
+	</a>
+	<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+		<i class="fa fa-angle-right"></i>
+	</a>
+</div>
 
     <!-- ****** Footer Area Start ****** -->
     <footer class="dorne-footer-area">
@@ -575,6 +770,46 @@
     <script src="js/others/plugins.js"></script>
     <!-- Active JS -->
     <script src="js/active.js"></script>
+	
+	<script>
+    
+    /* BLUR EFFECT */
+
+    var $container = $('.article_center2'),
+        $articles = $container.children('article'),
+        timeout;
+
+    $articles.on('mouseenter', function(event) {
+        var $article = $(this);
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+            if ($article.hasClass('active')) return false;
+            $articles.not($article).removeClass('active').addClass('blur');
+            $article.removeClass('blur').addClass('active');
+        }, 75);
+    });
+    $('.article_center2', '#services ').on('mouseleave', function(event) {
+        clearTimeout(timeout);
+        $articles.removeClass('active blur');
+    });
+
+
+    $articles.bind('click', function(){
+        var title = $(this).find('h3').text();
+        alert("Nothing interesting,\nonly the actual title of the article = " + title);
+    });
+
+  	/* AUTHOR LINK */
+     $('.about-me-img').hover(function(){
+            $('.authorWindowWrapper').stop().fadeIn('fast').find('p').addClass('trans');
+        }, function(){
+            $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
+        });
+
+
+
+</script>
+	
 </body>
 
 </html>
