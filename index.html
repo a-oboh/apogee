@@ -28,114 +28,61 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 </head>
 
 <style type="text/css">
-body {
-	font-family: "Open Sans", sans-serif;
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
 }
-h2 {
-	color: #333;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: "Roboto", sans-serif;
-	font-weight: bold;
-	position: relative;
-	margin: 25px 0 50px;
-}
-h2::after {
-	content: "";
-	width: 100px;
-	position: absolute;
-	margin: 0 auto;
-	height: 3px;
-	background: #ffdc12;
-	left: 0;
-	right: 0;
-	bottom: -10px;
-}
-.carousel {
-	width: 650px;
-	margin: 0 auto;
-	padding-bottom: 50px;
-}
-.carousel .item {
-	color: #999;
-	font-size: 14px;
-    text-align: center;
-	overflow: hidden;
-    min-height: 340px;
-}
-.carousel .item a {
-	color: #eb7245;
-}
-.carousel .img-box {
-	width: 145px;
-	height: 145px;
-	margin: 0 auto;
-	border-radius: 50%;
-}
-.carousel .img-box img {
-	width: 100%;
-	height: 100%;
-	display: block;
-	border-radius: 50%;
-}
-.carousel .testimonial {	
-	padding: 30px 0 10px;
-}
-.carousel .overview {	
-	text-align: center;
-	padding-bottom: 5px;
-}
-.carousel .overview b {
-	color: #333;
-	font-size: 15px;
-	text-transform: uppercase;
-	display: block;	
-	padding-bottom: 5px;
-}
-.carousel .star-rating i {
-	font-size: 18px;
-	color: #ffdc12;
-}
-.carousel .carousel-control {
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-    background: #999;
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
     text-shadow: none;
-	top: 4px;
+    margin-top: 30px;
 }
-.carousel-control i {
-	font-size: 20px;
-	margin-right: 2px;
+#quote-carousel .carousel-indicators {
+    position: relative;
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-top: 20px;
+    margin-right: -19px;
 }
-.carousel-control.left {
-	left: auto;
-	right: 40px;
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all .4s ease-in;
+    vertical-align: middle;
 }
-.carousel-control.right i {
-	margin-right: -2px;
+#quote-carousel .carousel-indicators .active {
+    width: 128px;
+    height: 128px;
+    opacity: 1;
+    transition: all .2s;
 }
-.carousel .carousel-indicators {
-	bottom: 15px;
+.item blockquote {
+    border-left: none;
+    margin: 0;
 }
-.carousel-indicators li, .carousel-indicators li.active {
-	width: 11px;
-	height: 11px;
-	margin: 1px 5px;
-	border-radius: 50%;
-}
-.carousel-indicators li {	
-	background: #e2e2e2;
-	border-color: transparent;
-}
-.carousel-indicators li.active {
-	border: none;
-	background: #888;		
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
 }
 </style>
 
@@ -336,7 +283,7 @@ h2::after {
                 </div> -->
                 <div class="col-12 col-lg-12 col-md-12">
                     <div class="single-editors-pick-area wow fadeInUp" data-wow-delay="0.2s">
-                        <img src="img/zanzibar.jpg" alt="" height="120px">
+                        <img src="https://odis.homeaway.com/odis/listing/cdab464d-af67-43c0-b77f-819da928477d.c10.jpg" alt="" height="120px">
                         <div class="overlay">
                             <div class="text"><a href="hotelsinlagos.html">Order Now ></a></div>
                         </div>
@@ -349,7 +296,7 @@ h2::after {
                         </div>
                     </div>
                     <div class="single-editors-pick-area wow fadeInUp" data-wow-delay="0.4s">
-                        <img src="img/istanbul.jpg" alt="">
+                        <img src="img/istanbul.jpg" alt=""  height="120px">
                         <div class="overlay">
                             <div class="text"><a href="hotelsinlagos.html">Order Now ></a></div>
                         </div>
@@ -670,67 +617,67 @@ h2::after {
     </section>
 	</div>
 	
+	
+
+	
 	   <h2>Testimonials</h2>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-	<!-- Carousel indicators -->
-	<ol class="carousel-indicators">
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#myCarousel" data-slide-to="1"></li>
-		<li data-target="#myCarousel" data-slide-to="2"></li>
-	</ol>   
-	<!-- Wrapper for carousel items -->
-	<div class="carousel-inner">		
-		<div class="item carousel-item active">
-			<div class="img-box"><img src="img/core-img/logo.png" alt=""></div>
-			<p class="testimonial">Nice website</p>
-			<p class="overview"><b>Michael Holz</b>Seo Analyst at <a href="#">lagosbuild</a></p>
-			<div class="star-rating">
-				<ul class="list-inline">
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-				</ul>
-			</div>
-		</div>
-		<div class="item carousel-item">
-			<div class="img-box"><img src="img/core-img/logo.png" alt=""></div>
-			<p class="testimonial">Nice website</p>
-			<p class="overview"><b>Paula Wilson</b>Media Analyst at <a href="#">lagosbuild</a></p>
-			<div class="star-rating">
-				<ul class="list-inline">
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-				</ul>
-			</div>
-		</div>
-		<div class="item carousel-item">
-			<div class="img-box"><img src="img/core-img/logo.png" alt=""></div>
-			<p class="testimonial">Nice website</p>
-			<p class="overview"><b>Antonio Moreno</b>Web Developer at <a href="#">lagosbuild</a></p>
-			<div class="star-rating">
-				<ul class="list-inline">
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
-				</ul>
-			</div>
-		</div>		
-	</div>
-	<!-- Carousel controls -->
-	<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
-		<i class="fa fa-angle-left"></i>
-	</a>
-	<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
-		<i class="fa fa-angle-right"></i>
-	</a>
-</div>
+<div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                    <!-- Carousel Slides / Quotes -->
+                    <div class="carousel-inner text-center">
+                        <!-- Quote 1 -->
+                        <div class="item active">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>nice website</p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 2 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>nice website</p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 3 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>Nice website</p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!-- Bottom Carousel Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+                        </li>
+                    </ol>
+
+                    <!-- Carousel Buttons Next/Prev -->
+                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- ****** Footer Area Start ****** -->
     <footer class="dorne-footer-area">
